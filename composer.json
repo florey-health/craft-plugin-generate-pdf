@@ -1,0 +1,41 @@
+{
+  "name": "spg/generate-pdf",
+  "description": "Generate a PDF from a template.",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "generate pdf"
+  ],
+  "support": {
+    "docs": "https://github.com/florey-health/generate-pdf/blob/master/README.md",
+    "issues": "https://github.com/florey-health/generate-pdf/issues"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sam Prince Group",
+      "homepage": "https://samprincegroup.com.au"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.0.0-RC1",
+    "dompdf/dompdf": "^0.8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "spg\\generatepdf\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Generate PDF",
+    "handle": "generate-pdf",
+    "hasCpSettings": false,
+    "hasCpSection": false,
+    "changelogUrl": "https://raw.githubusercontent.com/florey-health/generate-pdf/master/CHANGELOG.md",
+    "class": "spg\\generatepdf\\GeneratePdf"
+  }
+}
